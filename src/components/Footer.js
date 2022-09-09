@@ -1,19 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 export default function Footer() {
+    let year = new Date().getFullYear();
+
   return (
-    <div></div>
-    // <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    //         <Container>
-    //             <Navbar.Brand href="#home">Student Management System</Navbar.Brand>
-    //             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    //             <Navbar.Collapse id="responsive-navbar-nav">
-    //                 <Nav className="me-auto">
-    //                     <Nav.Link href="#features">Add Student</Nav.Link>
-    //                     <Nav.Link href="#pricing">View Student</Nav.Link>
-    //                 </Nav>
-    //             </Navbar.Collapse>
-    //         </Container>
-    //     </Navbar>
+    <div>
+      <Navbar fixed="bottom" bg="dark" variant="dark">  
+        <Container  className="text-center text-muted">
+            <Col lg={12} className="text-center text-light">
+            {year} - All Rights are Reserved!!!
+            </Col>
+        </Container>
+      </Navbar>
+    </div>
   )
 }
