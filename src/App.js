@@ -6,8 +6,9 @@ import StudentList from './components/StudentList';
 function App() {
   return (
     <div className="App">
-     <Student/>
-     <StudentList/>
+      <NavigationBar />
+      <Student />
+      <StudentList />
     </div>
   );
 }
